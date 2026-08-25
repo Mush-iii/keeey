@@ -1,0 +1,23 @@
+# Compiled output
+packages/*/.types/
+/dist/
+
+# Tauri build output
+src-tauri/target/
+src-tauri/gen/
+
+# Other
+node_modules/
+build/
+out/
+tmp/
+sandbox/
+.vscode/
+.idea/
+*.tsbuildinfo
+*.log
+*.bak
+*~
+
+# Custom scripts
+deploy.sh

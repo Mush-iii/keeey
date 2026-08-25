@@ -1,0 +1,17 @@
+# Do not diff or merge lock files.
+package-lock.json               text eol=lf -diff -merge
+yarn.lock                       text eol=lf -diff -merge
+
+# Handle line endings automatically for files detected as
+# text and leave all files detected as binary untouched.
+* text=auto eol=lf
+
+# Binary assets must never be line-ending converted.
+*.jpg  binary
+*.png  binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+*.data binary
