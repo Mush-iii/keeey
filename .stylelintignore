@@ -1,0 +1,5 @@
+**/build/
+**/sandbox/
+**/tmp/
+dist/
+src-tauri/

@@ -1,0 +1,30 @@
+.body {
+  display: grid;
+  grid-template-areas:
+    "topbar topbar topbar"
+    "sidebar main nav";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr auto;
+  min-block-size: 100vb;
+}
+
+.main {
+  z-index: 1;
+  grid-area: main;
+}
+
+.nav {
+  grid-area: nav;
+  margin: 0;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+}
+
+.topbar {
+  contain: strict;
+  display: flex;
+  grid-area: topbar;
+  align-items: start;
+  justify-content: center;
+  box-sizing: content-box;
+}
